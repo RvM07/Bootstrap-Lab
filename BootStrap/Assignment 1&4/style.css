@@ -1,0 +1,23 @@
+    body {
+      font-family: Arial, sans-serif;
+      background-color: cadetblue;
+      margin: 40px;
+      color: #ffffff;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #000000;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    img{
+      width:300px;
+    }
+    h1, h2 {
+      color: seagreen;
+    }
+    ul, ol {
+      margin-left: 20px;
+    }

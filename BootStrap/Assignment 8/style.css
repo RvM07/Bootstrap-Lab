@@ -1,0 +1,30 @@
+body{
+    font-family:Arial, sans-serif;
+    padding: 20px;
+    background-color: #f0f8ff;
+}
+.question p {
+font-weight:bold;
+}
+.btn {
+    display:block;
+    width:100%;
+    padding:10px;
+    background-color:green;
+    color:white;
+    font-size: 16px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+.btn:hover {
+    background-color: darkgreen;
+
+}
+#score {
+    text-align:center;
+    font-size: 18px;
+    margin-top:20px;
+    color: blue;
+    font-weight: bold;
+}
