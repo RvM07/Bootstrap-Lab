@@ -43,13 +43,11 @@
 
     <div class="row justify-content-center align-items-center mt-4 mb-5">
         <div class="col-auto">
-            <!-- Modal Button -->
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Launch Modal
             </button>
         </div>
         <div class="col-auto">
-            <!-- Tooltips -->
             <div class="d-flex gap-3">
                 <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
                     title="Tooltip on top">
@@ -70,7 +68,6 @@
             </div>
         </div>
     </div>
-    <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -91,7 +88,6 @@
     </div>
 
     <div class="container mt-5">
-        <!-- Carousel -->
         <div id="mainCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"
@@ -125,7 +121,6 @@
 
         <script src="/BootStrap/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
         <script>
-            // Enable all tooltips
             document.addEventListener('DOMContentLoaded', function () {
                 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
                 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
