@@ -19,7 +19,7 @@
                         <h2 class="text-center mb-0">Registration Form</h2>
                     </div>
                     <div class="card-body">
-                        <form class="needs-validation" novalidate>
+                        <form class="needs-validation">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Full Name</label>
                                 <div class="input-group has-validation">
@@ -54,74 +54,6 @@
                                 </div>
                             </div>
 
-                            <div class="mb-3">
-                                <label for="phone" class="form-label">Phone Number</label>
-                                <div class="input-group has-validation">
-                                    <span class="input-group-text"><i class="bi bi-telephone-fill"></i></span>
-                                    <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{10}"
-                                        required>
-                                    <div class="invalid-feedback">
-                                        Please enter a valid 10-digit phone number.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="address" class="form-label">Address</label>
-                                <div class="input-group has-validation">
-                                    <span class="input-group-text"><i class="bi bi-house-fill"></i></span>
-                                    <textarea class="form-control" id="address" name="address" rows="2"
-                                        required></textarea>
-                                    <div class="invalid-feedback">
-                                        Please enter your address.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="dob" class="form-label">Date of Birth</label>
-                                <div class="input-group has-validation">
-                                    <span class="input-group-text"><i class="bi bi-calendar-fill"></i></span>
-                                    <input type="date" class="form-control" id="dob" name="dob" required>
-                                    <div class="invalid-feedback">
-                                        Please select your date of birth.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="mb-3">
-                                <label class="form-label">Gender</label>
-                                <div class="d-flex gap-3">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="gender" id="male"
-                                            value="male" required>
-                                        <label class="form-check-label" for="male">Male</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="gender" id="female"
-                                            value="female">
-                                        <label class="form-check-label" for="female">Female</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="gender" id="other"
-                                            value="other">
-                                        <label class="form-check-label" for="other">Other</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="mb-3">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="terms" required>
-                                    <label class="form-check-label" for="terms">
-                                        I agree to the terms and conditions
-                                    </label>
-                                    <div class="invalid-feedback">
-                                        You must agree before submitting.
-                                    </div>
-                                </div>
-                            </div>
-
                             <div class="d-grid gap-2">
                                 <button class="btn btn-primary" type="submit">Register</button>
                             </div>
@@ -131,23 +63,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        (function () {
-            'use strict'
-            var forms = document.querySelectorAll('.needs-validation')
-            Array.prototype.slice.call(forms)
-                .forEach(function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (!form.checkValidity()) {
-                            event.preventDefault()
-                            event.stopPropagation()
-                        }
-                        form.classList.add('was-validated')
-                    }, false)
-                })
-        })()
-    </script>
 </body>
 
 </html>
