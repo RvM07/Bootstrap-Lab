@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <!-- Bootstrap CSS -->
+    <link href="../bootstrap-5.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        .header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .sidebar {
+            background-color: #e9ecef;
+            padding: 20px;
+            height: 100%;
+        }
+        .content {
+            background-color: #dee2e6;
+            padding: 20px;
+            height: 100%;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="row">
+            <div class="col-12 header">
+                <h1>Header Section</h1>
+                <p>This is the header of the webpage</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="sidebar">
+                    <h3>Sidebar</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-md-9">
+                <div class="content">
+                    <h2>Main Content</h2>
+                    <p>This is the main content area of the webpage. It uses Bootstrap's responsive grid system.</p>
+                    <p>On smaller screens (below 768px), the sidebar will move above the content.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 footer">
+                <p>&copy; 2025 My Website. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
