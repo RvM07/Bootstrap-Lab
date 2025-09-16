@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS+jQuery</title>
+    <link rel="stylesheet" href="/BootStrap/bootstrap-5.3.7-dist/css/bootstrap.min.css">
+    <script src="/BootStrap/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="px-4">
+    <div class="container text-center"></div>
+    <div id="myAlert" class="alert alert-success alert-dismissible mt-3" role="alert" style="display: none;">
+        <strong>Success!</strong> This is a success alert—check it out!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <button id="showAlertBtn" class="btn btn-primary mt-3">Show Alert</button>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#showAlertBtn').click(function() {
+                $('#myAlert').show();
+            });
+        });
+    </script>
+</body>
+</html>
