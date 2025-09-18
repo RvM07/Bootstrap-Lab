@@ -46,7 +46,8 @@
                                 <label for="password" class="form-label">Password</label>
                                 <div class="input-group has-validation">
                                     <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
-                                    <input type="password" class="form-control" id="password" name="password" pattern="{8,}$" required>
+                                    <input type="password" class="form-control" id="password" name="password"
+                                        pattern="{8,}$" required>
                                     <div class="invalid-feedback">
                                         Password must be at least 8 characters long and contain both letters and
                                         numbers.
@@ -64,12 +65,12 @@
         </div>
     </div>
     <script>
-        (()=>{
+        (() => {
             'use strict'
             var forms = document.querySelectorAll('.needs-validation')
             Array.from(forms)
-                .forEach((form)=>{
-                    form.addEventListener('submit',(event)=> {
+                .forEach((form) => {
+                    form.addEventListener('submit', (event) => {
                         if (!form.checkValidity()) {
                             event.preventDefault();
                             event.stopPropagation();
